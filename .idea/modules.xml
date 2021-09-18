@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/1/1.iml" filepath="$PROJECT_DIR$/1/1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/B1/B1.iml" filepath="$PROJECT_DIR$/B1/B1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Boi_Chung_Uoc_Chung/Boi_Chung_Uoc_Chung.iml" filepath="$PROJECT_DIR$/Boi_Chung_Uoc_Chung/Boi_Chung_Uoc_Chung.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Boi_So_Nho_Nhat/Boi_So_Nho_Nhat.iml" filepath="$PROJECT_DIR$/Boi_So_Nho_Nhat/Boi_So_Nho_Nhat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chuan_Hoa_Xau_Ho_Ten_2/Chuan_Hoa_Xau_Ho_Ten_2.iml" filepath="$PROJECT_DIR$/Chuan_Hoa_Xau_Ho_Ten_2/Chuan_Hoa_Xau_Ho_Ten_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chuan_Hoa_Xau_Ho_ten_1/Chuan_Hoa_Xau_Ho_ten_1.iml" filepath="$PROJECT_DIR$/Chuan_Hoa_Xau_Ho_ten_1/Chuan_Hoa_Xau_Ho_ten_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Danh_Sach_Canh/Danh_Sach_Canh.iml" filepath="$PROJECT_DIR$/Danh_Sach_Canh/Danh_Sach_Canh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Diem_Can_Bang/Diem_Can_Bang.iml" filepath="$PROJECT_DIR$/Diem_Can_Bang/Diem_Can_Bang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hello_World/Hello_World.iml" filepath="$PROJECT_DIR$/Hello_World/Hello_World.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hieu_So_Nguyen_Lon_1/Hieu_So_Nguyen_Lon_1.iml" filepath="$PROJECT_DIR$/Hieu_So_Nguyen_Lon_1/Hieu_So_Nguyen_Lon_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kiem_tra_So_Fi/Kiem_tra_So_Fi.iml" filepath="$PROJECT_DIR$/Kiem_tra_So_Fi/Kiem_tra_So_Fi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kien_Tra_So_Fi_Thu_N/Kien_Tra_So_Fi_Thu_N.iml" filepath="$PROJECT_DIR$/Kien_Tra_So_Fi_Thu_N/Kien_Tra_So_Fi_Thu_N.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Phuong_Trinh_Bac_Nhat/Phuong_Trinh_Bac_Nhat.iml" filepath="$PROJECT_DIR$/Phuong_Trinh_Bac_Nhat/Phuong_Trinh_Bac_Nhat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sap_Xep_Chen/Sap_Xep_Chen.iml" filepath="$PROJECT_DIR$/Sap_Xep_Chen/Sap_Xep_Chen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sap_Xep_Chon/Sap_Xep_Chon.iml" filepath="$PROJECT_DIR$/Sap_Xep_Chon/Sap_Xep_Chon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sap_Xep_Noi_Bot/Sap_Xep_Noi_Bot.iml" filepath="$PROJECT_DIR$/Sap_Xep_Noi_Bot/Sap_Xep_Noi_Bot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/So_Dep_1/So_Dep_1.iml" filepath="$PROJECT_DIR$/So_Dep_1/So_Dep_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/So_Dep_2/So_Dep_2.iml" filepath="$PROJECT_DIR$/So_Dep_2/So_Dep_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/So_Dep_3/So_Dep_3.iml" filepath="$PROJECT_DIR$/So_Dep_3/So_Dep_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tich_Ma_Tran_Chuyen_Vi/Tich_Ma_Tran_Chuyen_Vi.iml" filepath="$PROJECT_DIR$/Tich_Ma_Tran_Chuyen_Vi/Tich_Ma_Tran_Chuyen_Vi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tinh_Luy_Thua/Tinh_Luy_Thua.iml" filepath="$PROJECT_DIR$/Tinh_Luy_Thua/Tinh_Luy_Thua.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tinh_Tong/Tinh_Tong.iml" filepath="$PROJECT_DIR$/Tinh_Tong/Tinh_Tong.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tong_Uoc_So/Tong_Uoc_So.iml" filepath="$PROJECT_DIR$/Tong_Uoc_So/Tong_Uoc_So.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Uoc_So_Chia_Het_Cho_2/Uoc_So_Chia_Het_Cho_2.iml" filepath="$PROJECT_DIR$/Uoc_So_Chia_Het_Cho_2/Uoc_So_Chia_Het_Cho_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Uoc_So_Chung_Lon_Nhat_Cua_So_Nguyen_Lon/Uoc_So_Chung_Lon_Nhat_Cua_So_Nguyen_Lon.iml" filepath="$PROJECT_DIR$/Uoc_So_Chung_Lon_Nhat_Cua_So_Nguyen_Lon/Uoc_So_Chung_Lon_Nhat_Cua_So_Nguyen_Lon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Uoc_So_Nguyen_So_Lon_Nhat/Uoc_So_Nguyen_So_Lon_Nhat.iml" filepath="$PROJECT_DIR$/Uoc_So_Nguyen_So_Lon_Nhat/Uoc_So_Nguyen_So_Lon_Nhat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Xau_Nhi_Phan/Xau_Nhi_Phan.iml" filepath="$PROJECT_DIR$/Xau_Nhi_Phan/Xau_Nhi_Phan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/code_ptit.iml" filepath="$PROJECT_DIR$/.idea/code_ptit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dem_so_lan_xuat_hien/dem_so_lan_xuat_hien.iml" filepath="$PROJECT_DIR$/dem_so_lan_xuat_hien/dem_so_lan_xuat_hien.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hinh_chu_nhat/hinh_chu_nhat.iml" filepath="$PROJECT_DIR$/hinh_chu_nhat/hinh_chu_nhat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mang_doi_xung/mang_doi_xung.iml" filepath="$PROJECT_DIR$/mang_doi_xung/mang_doi_xung.iml" />
+      <module fileurl="file://$PROJECT_DIR$/phan_tich_thua_so_nguyen_to/phan_tich_thua_so_nguyen_to.iml" filepath="$PROJECT_DIR$/phan_tich_thua_so_nguyen_to/phan_tich_thua_so_nguyen_to.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sap_xep_doi_cho_truc_tiep/sap_xep_doi_cho_truc_tiep.iml" filepath="$PROJECT_DIR$/sap_xep_doi_cho_truc_tiep/sap_xep_doi_cho_truc_tiep.iml" />
+      <module fileurl="file://$PROJECT_DIR$/so_nguyen_to/so_nguyen_to.iml" filepath="$PROJECT_DIR$/so_nguyen_to/so_nguyen_to.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tinh_so_fi/tinh_so_fi.iml" filepath="$PROJECT_DIR$/tinh_so_fi/tinh_so_fi.iml" />
+    </modules>
+  </component>
+</project>

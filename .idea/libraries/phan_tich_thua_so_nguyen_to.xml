@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="phan_tich_thua_so_nguyen_to">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/phan_tich_thua_so_nguyen_to/dist/phan_tich_thua_so_nguyen_to.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
