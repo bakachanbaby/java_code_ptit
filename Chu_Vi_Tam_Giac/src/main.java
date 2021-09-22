@@ -33,54 +33,6 @@ public class main {
             this.y3 = y3;
         }
 
-        public double getX1() {
-            return x1;
-        }
-
-        public void setX1(double x1) {
-            this.x1 = x1;
-        }
-
-        public double getY1() {
-            return y1;
-        }
-
-        public void setY1(double y1) {
-            this.y1 = y1;
-        }
-
-        public double getX2() {
-            return x2;
-        }
-
-        public void setX2(double x2) {
-            this.x2 = x2;
-        }
-
-        public double getY2() {
-            return y2;
-        }
-
-        public void setY2(double y2) {
-            this.y2 = y2;
-        }
-
-        public double getX3() {
-            return x3;
-        }
-
-        public void setX3(double x3) {
-            this.x3 = x3;
-        }
-
-        public double getY3() {
-            return y3;
-        }
-
-        public void setY3(double y3) {
-            this.y3 = y3;
-        }
-
         public double dis(double x1, double y1, double x2, double y2){
             return Math.sqrt((Math.pow((x1-x2), 2)) + Math.pow((y1-y2), 2));
         }
@@ -89,22 +41,11 @@ public class main {
             double dis2 = dis(x1, y1, x3, y3);
             double dis3 = dis(x3, y3, x2, y2);
             
-            long abx = (long)(x2-x1);
-            long aby = (long)(y2-y1);
-            long acx = (long)(x3-x1);
-            long acy = (long)(y3-y1);
-            System.out.println(abx);
-            System.out.println(aby);
-            System.out.println(acx);
-            System.out.println(acy);
-            
-            if(abx%acx == 0 || acx%abx == 0 || aby%acy == 0 || acy%aby == 0){
-                System.out.print("INVALID");
-            }
-            else{
+            if(dis1 + dis2 > dis3 && dis1 + dis3 > dis2 && dis2 + dis3 > dis1){
                 System.out.printf("%.3f", dis1+dis2+dis3);
             }
-            
+            else
+               System.out.print("INVALID");
             System.out.println();
         }
     }

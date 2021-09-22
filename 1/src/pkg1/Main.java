@@ -16,9 +16,9 @@ public class pkg1 {
     
     Scanner sc=new Scanner(System.in);
     
-    public SoNguyen(){}
+    public pkg1(){}
 
-    public SoNguyen(int n) {
+    public pkg1(int n) {
         this.n = n;
     }
 
