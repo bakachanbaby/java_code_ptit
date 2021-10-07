@@ -1,5 +1,6 @@
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 /*
@@ -7,7 +8,6 @@ import java.util.Scanner;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author LENOVO
@@ -17,46 +17,62 @@ public class main {
     /**
      * @param args the command line arguments
      */
-    public static void printUnionSort(int[] A, int[] B, int n, int m) {
-        Arrays.sort(A);
-        Arrays.sort(B);
-        int index_a = 0, index_b = 0;
-        while (index_a < n && index_b < m) {
-            if (A[index_a] == B[index_b]) {
-                System.out.print(A[index_a] + " ");
-                index_a++;
-                index_b++;
-            } else if (A[index_a] > A[index_b]) {
-                index_b++;
-            } else {
-                index_a++;
-            }
+    public static Boolean tuTN(String s) {
+        StringBuffer srr = new StringBuffer(s);
+        String x = srr.reverse().toString();
+        if (x.compareToIgnoreCase(s) == 0) {
+            return true;
         }
+        return false;
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int m = sc.nextInt();
-        int A[] = new int[n];
-        int B[] = new int[m];
-        
-        for(int i = 0; i < n; i++)
-            A[i] = sc.nextInt();
-        for(int i = 0; i < m; i++)
-            B[i] = sc.nextInt();
-        Arrays.sort(A);
-        Arrays.sort(B);
-        for(int i = 0; i < n; i++){
-            for(int j = 0; j < m; j++){
-                if(A[i] == B[j]){
-                    System.out.print(A[i] + " ");
-                    break;
+        ArrayList<String> list = new ArrayList<String>();
+        int mx = 0;
+//        int t = Integer.parseInt(sc.nextLine());
+        while (sc.hasNext()) {
+            String s = sc.nextLine();
+            s = s.trim();
+            String[] arr = s.split("\\s+");
+            for (int i = 0; i < arr.length; i++) {
+                if (arr[i].length() > 0) {
+                    if (tuTN(arr[i])) {
+                        list.add(arr[i]);
+                    }
                 }
-                    
             }
         }
-//        printUnionSort(A, B, n, m);
+        for (String string : list) {
+            mx = Integer.max(mx, string.length());
+        }
+        int dem = 0;
+        String x;
+        for (int i = 0; i < list.size(); i++) {
+            dem = 0;
+            x = "";
+            if (list.get(i) != "0") {
+                for (int j = i; j < list.size(); j++) {
+                    if (j != i) {
+                        if (list.get(j).length() == mx && list.get(j).compareTo(list.get(i)) == 0) {
+                            dem++;
+                            x = list.get(j);
+                            list.set(j, "0");
+                        }
+                    }
+                    else{
+                        if (list.get(j).length() == mx) {
+                            dem++;
+                            x = list.get(j);
+                        }
+                    }
+
+                }
+                if (x.compareTo("") != 0) {
+                    System.out.println(x + " " + dem);
+                }
+            }
+        }
     }
 
 }
