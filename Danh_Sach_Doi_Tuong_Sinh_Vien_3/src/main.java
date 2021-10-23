@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -15,55 +14,20 @@ import java.util.Scanner;
  */
 public class main {
 
-    public static class thiSinh {
+    public static class thiSinh implements Comparable<thiSinh>{
 
-        private String maSV;
-        private String hoTen;
-        private String maLop;
-        private String ngaySinh;
+        private String maSV, hoTen, maLop, ngaySinh;
         private float gpa;
 
-        public thiSinh(String maSV, String hoTen, String maLop, String ngaySinh, float gpa) {
-            this.maSV = maSV;
-            this.hoTen = hoTen;
+        public thiSinh(int stt, String hoTen, String maLop, String ngaySinh, float gpa) {
+            this.maSV = "B20DCCN" + String.format("%03d", stt);
+            this.hoTen = formatHoTen(hoTen);
             this.maLop = maLop;
-            this.ngaySinh = ngaySinh;
+            this.ngaySinh = format(ngaySinh);
             this.gpa = gpa;
         }
 
-        public String getHoTen() {
-            return hoTen;
-        }
-
-        public void setHoTen(String hoTen) {
-            this.hoTen = hoTen;
-        }
-
-        public String getmaLop() {
-            return maLop;
-        }
-
-        public void setmaLop(String maLop) {
-            this.maLop = maLop;
-        }
-
-        public String getNgaySinh() {
-            return ngaySinh;
-        }
-
-        public void setNgaySinh(String ngaySinh) {
-            this.ngaySinh = ngaySinh;
-        }
-
-        public float getGpa() {
-            return gpa;
-        }
-
-        public void setGpa(float gpa) {
-            this.gpa = gpa;
-        }
-
-        public void format() {
+        public String format(String ngaySinh) {
             String s = ngaySinh;
             String srr[] = s.split("/");
             String x = "";
@@ -74,11 +38,10 @@ public class main {
                 x += srr[i] + "/";
             }
             x += srr[srr.length - 1];
-            this.ngaySinh = x;
-
+            return x;
         }
 
-        public void formatHoTen() {
+        public String formatHoTen(String hoTen) {
             String s = hoTen;
             s = s.trim();
             String[] arr = s.split("\\s+");
@@ -90,76 +53,37 @@ public class main {
                     newstring += x + y.substring(1) + " ";
                 }
             }
-            this.hoTen = newstring;
+            return newstring;
         }
 
-        public void in() {
-            System.out.print(maSV + " " + hoTen + maLop + " " + ngaySinh + " ");
-            System.out.printf("%.2f", gpa);
-            System.out.println("");
-        }
-    }
-
-    public static class dssv {
-
-        private ArrayList<thiSinh> listSV;
-
-        public ArrayList<thiSinh> getListSV() {
-            return listSV;
+        @Override
+        public String toString() {
+            return  maSV + " " + hoTen + maLop + " " + ngaySinh + " " + String.format("%.2f", gpa);
         }
 
-        public void setListSV(ArrayList<thiSinh> listSV) {
-            this.listSV = listSV;
+        @Override
+        public int compareTo(thiSinh o) {
+            if (this.gpa < o.gpa) {
+                    return 1;
+            }
+            return -1;
         }
 
-        public dssv(ArrayList<thiSinh> listSV) {
-            this.listSV = listSV;
-        }
-
-        public dssv() {
-            this.listSV = new ArrayList<thiSinh>();
-        }
-
-        public void themSV(thiSinh sv) {
-            listSV.add(sv);
-        }
-
+        
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = Integer.parseInt(sc.nextLine());
-        int k = 1;
         ArrayList<thiSinh> listSV = new ArrayList<thiSinh>();
-        while (t-- > 0) {
-            String hoTen = sc.nextLine();
-            String maLop = sc.nextLine();
-            String ngaySinh = sc.nextLine();
-            Float gpa = Float.parseFloat(sc.nextLine());
-            String maSV = "B20DCCN" + String.format("%03d", k);
-            thiSinh a = new thiSinh(maSV, hoTen, maLop, ngaySinh, gpa);
-            a.format();
-            a.formatHoTen();
+       for(int i = 1; i <= t; i++) {
+            thiSinh a = new thiSinh(i, sc.nextLine(), sc.nextLine(), sc.nextLine(), Float.parseFloat(sc.nextLine()));
             listSV.add(a);
-            k++;
         }
-        Collections.sort(listSV, new Comparator<thiSinh>() {
-            @Override
-            public int compare(thiSinh o1, thiSinh o2) {
-               if (o1.getGpa() < o2.getGpa()) {
-                    return 1;
-                } else {
-                    if (o1.getGpa() == o2.getGpa()) {
-                        return 0;
-                    } else {
-                        return -1;
-                    }
-                }
-            }
-        });
+        Collections.sort(listSV);
         
-        for(int i = 0; i < listSV.size(); i++){
-            listSV.get(i).in();
+        for (thiSinh sinh : listSV) {
+            System.out.println(sinh);
         }
     }
 

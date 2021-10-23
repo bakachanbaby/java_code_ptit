@@ -11,31 +11,28 @@
 public class nani {
     
 }
-9
-GV01
-Nguyen Kim Loan
-1420000
-HT05
-Hoang Thanh Tuan
-1780000
-GV02
-Tran Binh Nguyen
-1468000
-GV01
-Nguyen Kim Loan
-1420000
-HT05
-Hoang Thanh Tuan
-1780000
-GV02
-Tran Binh Nguyen
-1468000
-GV01
-Nguyen Kim Loan
-1420000
-HT05
-Hoang Thanh Tuan
-1780000
-GV02
-Tran Binh Nguyen
-1468000
+12
+Tran Minh Hieu
+5.9
+Nguyen Bao Trung
+8.6
+Le Hong Ha
+9.2
+Tran Minh Hieu
+5.9
+Nguyen Bao Trung
+8.6
+Le Hong Ha
+9.2
+Tran Minh Hieu
+5.9
+Nguyen Bao Trung
+8.6
+Le Hong Ha
+9.2
+Tran Minh Hieu
+5.9
+Nguyen Bao Trung
+8.6
+Le Hong Ha
+9.2
